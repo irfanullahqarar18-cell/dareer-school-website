@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="دریر خصوصي عالي لېسه، سیدکرم ولسوالۍ، پکتیا ولایت">
+<title>دریر خصوصي عالي لېسه | Dareer Private High School</title>
+<style>
+:root{--blue:#69c3e8;--navy:#143c57;--gold:#e5bd51;--ink:#1d2b34;--paper:#f5f9fc;--white:#fff;--muted:#627783;--line:#dbe7ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.85}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.topline{background:var(--navy);color:#fff;font-size:.88rem;padding:7px 0}
+.topline .container{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #163c5710}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}.brand img{width:68px;height:68px;object-fit:contain;border-radius:50%;background:#eaf7fc}
+.brand-title{font-size:1.08rem;font-weight:800;color:var(--navy);line-height:1.5}.brand-sub{font-size:.78rem;color:var(--muted);direction:ltr;text-align:right}
+nav{display:flex;align-items:center;gap:15px;flex-wrap:wrap;font-size:.91rem;font-weight:700}nav a:hover{color:#1688bd}
+.lang{border:1px solid var(--line);background:#f3f9fc;border-radius:10px;padding:7px 10px;color:var(--navy)}
+.hero{background:linear-gradient(120deg,#e6f7ff,#f8fbfd 58%,#fff2c8);padding:56px 0 48px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:center}
+.eyebrow{display:inline-block;background:#d5f1fc;color:#155475;padding:4px 13px;border-radius:30px;font-size:.9rem;font-weight:700}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.35;color:var(--navy);margin:14px 0}
+.hero p{font-size:1.1rem;color:#405d6d;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;border:0;border-radius:12px;padding:11px 18px;font-weight:800;cursor:pointer}
+.btn-primary{background:var(--navy);color:#fff}.btn-secondary{background:#fff;color:var(--navy);border:1px solid #bfd9e6}
+.hero-logo{display:flex;justify-content:center}.hero-logo img{width:min(100%,330px);border-radius:50%;box-shadow:0 18px 42px #174e6b20}
+.quick{margin-top:-1px;background:var(--navy);color:#fff;padding:20px 0}
+.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:center}
+.quick strong{display:block;color:#ffe08b;font-size:1.15rem}
+section{padding:54px 0;scroll-margin-top:100px}
+.section-head{text-align:center;margin-bottom:27px}.section-head h2{font-size:1.8rem;color:var(--navy);margin:0 0 6px}.section-head p{margin:0;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 22px #173c5710}
+.card .emoji{font-size:1.8rem}.card h3{margin:7px 0;color:var(--navy)}.card p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.notice{border-right:5px solid var(--gold);background:#fff;border-radius:14px;padding:18px 20px;margin:12px 0}
+.notice small{color:var(--muted)}.empty-note{background:#edf7fc;border:1px dashed #9fc8dc;padding:18px;border-radius:14px;color:#426475}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}
+input,select,textarea{width:100%;border:1px solid #cbdde6;border-radius:10px;padding:11px;background:#fff;color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+.form-help{font-size:.85rem;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery-tile{min-height:140px;border-radius:16px;background:linear-gradient(135deg,#d7f2fd,#fff0c7);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;color:var(--navy);font-weight:800;border:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+footer{background:#102f43;color:#e7f2f7;padding:28px 0;text-align:center}footer p{margin:4px}
+.ltr{direction:ltr;unicode-bidi:plaintext}
+.hidden{display:none!important}
+@media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin-inline:auto}.actions{justify-content:center}.hero-logo img{width:230px}nav{gap:9px;justify-content:center}.nav{flex-wrap:wrap;justify-content:center}.brand{width:100%;justify-content:center}.brand-sub{text-align:center}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.cards,.gallery{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr}.quick-grid>div{padding:5px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}nav{font-size:.83rem}.brand-title{font-size:1rem}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="container"><span data-i18n="location">پکتیا ولایت، سیدکرم ولسوالۍ</span><span data-i18n="grades">له لومړي تر دولسم ټولګي</span></div></div>
+<header><div class="container nav">
+  <a class="brand" href="#home"><img src="school-logo.jpg" alt="د ښوونځي لوګو"><span><span class="brand-title" data-i18n="school">دریر خصوصي عالي لېسه</span><span class="brand-sub">Dareer Private High School</span></span></a>
+  <nav>
+    <a href="#home" data-i18n="home">کورپاڼه</a><a href="#about" data-i18n="about">زموږ په اړه</a><a href="#announcements" data-i18n="announcements">خبرتیاوې</a><a href="#admission" data-i18n="admission">نوم‌لیکنه</a><a href="#results" data-i18n="results">پایلې</a><a href="#gallery" data-i18n="gallery">ګالري</a><a href="#contact" data-i18n="contact">اړیکه</a>
+    <select class="lang" id="language" aria-label="Language"><option value="ps">پښتو</option><option value="fa">دری</option><option value="en">English</option></select>
+  </nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+ <div><span class="eyebrow" data-i18n="welcome">زموږ ښوونځي ته ښه راغلاست</span><h1 data-i18n="headline">پوهه، اخلاق او روښانه راتلونکی</h1><p data-i18n="intro">دریر خصوصي عالي لېسه؛ د پکتیا ولایت د سیدکرم ولسوالۍ د زده‌کوونکو لپاره د زده‌کړې او پرمختګ کور.</p>
+ <div class="actions"><a class="btn btn-primary" href="#admission" data-i18n="apply">د نوم‌لیکنې معلومات</a><a class="btn btn-secondary" href="#contact" data-i18n="contactUs">له موږ سره اړیکه</a></div></div>
+ <div class="hero-logo"><img src="school-logo.jpg" alt="دریر خصوصي عالي لېسې نښان"></div>
+</div></section>
+<div class="quick"><div class="container quick-grid"><div><strong data-i18n="gradeRange">۱ ـ ۱۲ ټولګي</strong><span data-i18n="gradeLabel">د زده‌کړې پړاوونه</span></div><div><strong data-i18n="threeLang">۳ ژبې</strong><span data-i18n="langLabel">پښتو، دري او انګلیسي</span></div><div><strong data-i18n="learning">زده‌کړه او روزنه</strong><span data-i18n="future">د روښانه راتلونکي لپاره</span></div></div></div>
+<section id="about"><div class="container"><div class="section-head"><h2 data-i18n="aboutTitle">زموږ په اړه</h2><p data-i18n="aboutSub">د ښوونځي پېژندنه او تعلیمي موخه</p></div><div class="about-grid">
+<div class="card"><div class="emoji">🎓</div><h3 data-i18n="whoTitle">دریر خصوصي عالي لېسه</h3><p data-i18n="whoText">زموږ موخه د زده‌کوونکو د علمي وړتیاوو، ښو اخلاقو او مهارتونو پیاوړتیا ده. ښوونځی له لومړي تر دولسم ټولګي پورې د زده‌کړې لپاره پېژندل شوی.</p></div>
+<div class="card"><div class="emoji">📍</div><h3 data-i18n="whereTitle">زموږ موقعیت</h3><p data-i18n="whereText">پکتیا ولایت، سیدکرم ولسوالۍ، افغانستان.</p><p class="form-help" data-i18n="updateNote">د کره پتې او ټیلیفون شمېره وروسته ورزیات کړئ.</p></div>
+</div></div></section>
+<section id="announcements" style="background:#edf6fa"><div class="container"><div class="section-head"><h2 data-i18n="announcementTitle">خبرتیاوې او اعلانونه</h2><p data-i18n="announcementSub">د ښوونځي مهم خبرونه دلته خپرېږي</p></div><div class="empty-note" data-i18n="noAnnouncements">اوس مهال نوې خبرتیا نه ده خپره شوې. د ښوونځي اداره کولای شي دا برخه د نویو اعلانونو په خپرولو تازه کړي.</div></div></section>
+<section id="admission"><div class="container"><div class="section-head"><h2 data-i18n="admissionTitle">د زده‌کوونکو نوم‌لیکنه</h2><p data-i18n="admissionSub">د نوم‌لیکنې د علاقې فورمه</p></div><div class="card"><form id="admissionForm"><div class="form-grid">
+<div class="field"><label for="student" data-i18n="studentName">د زده‌کوونکي نوم</label><input id="student" required placeholder="..." autocomplete="name"></div>
+<div class="field"><label for="guardian" data-i18n="guardian">د پلار/سرپرست نوم</label><input id="guardian" required></div>
+<div class="field"><label for="grade" data-i18n="chooseGrade">غوښتل شوی ټولګی</label><select id="grade" required><option value="">—</option><option>۱</option><option>۲</option><option>۳</option><option>۴</option><option>۵</option><option>۶</option><option>۷</option><option>۸</option><option>۹</option><option>۱۰</option><option>۱۱</option><option>۱۲</option></select></div>
+<div class="field"><label for="phone" data-i18n="phone">د اړیکې شمېره</label><input id="phone" type="tel" required placeholder="07xxxxxxxx"></div>
+<div class="field full"><label for="message" data-i18n="extra">نور معلومات (اختیاري)</label><textarea id="message"></textarea></div>
+<div class="field full"><button class="btn btn-primary" type="submit" data-i18n="sendForm">د فورمې معلومات چمتو کړه</button><p class="form-help" data-i18n="formWarning">یادونه: دا نمونه فورمه ده؛ معلومات سرور ته نه لېږي. د حقیقي آنلاین نوم‌لیکنې لپاره به جلا خوندي سیستم ته اړتیا وي.</p><div id="formOutput" class="empty-note hidden" role="status"></div></div>
+</div></form></div></div></section>
+<section id="results" style="background:#edf6fa"><div class="container"><div class="section-head"><h2 data-i18n="resultsTitle">د ازموینو پایلې</h2><p data-i18n="resultsSub">د زده‌کوونکو د پایلو برخه</p></div><div class="empty-note" data-i18n="noResults">پایلې لا نه دي خپرې شوې. د زده‌کوونکو شخصي پایلې باید یوازې د ښوونځي د ادارې له خوا په خوندي ډول شریکې شي.</div></div></section>
+<section id="gallery"><div class="container"><div class="section-head"><h2 data-i18n="galleryTitle">د ښوونځي ګالري</h2><p data-i18n="gallerySub">د ښوونځي د فعالیتونو انځورونه</p></div><div class="gallery"><div class="gallery-tile" data-i18n="gallery1">🏫 د ښوونځي ودانۍ</div><div class="gallery-tile" data-i18n="gallery2">📚 درسي فعالیتونه</div><div class="gallery-tile" data-i18n="gallery3">🏅 علمي او فرهنګي پروګرامونه</div></div><p class="form-help" data-i18n="galleryNote">دا د ګالري نمونې دي؛ د ښوونځي اصلي عکسونه وروسته ورزیات کړئ.</p></div></section>
+<section id="contact" style="background:#edf6fa"><div class="container"><div class="section-head"><h2 data-i18n="contactTitle">له موږ سره اړیکه</h2><p data-i18n="contactSub">د ښوونځي له ادارې سره د اړیکې معلومات</p></div><div class="contact-grid"><div class="card"><h3 data-i18n="address">پته</h3><p data-i18n="whereText">پکتیا ولایت، سیدکرم ولسوالۍ، افغانستان.</p></div><div class="card"><h3 data-i18n="phoneEmail">ټیلیفون او برېښنالیک</h3><p data-i18n="contactPlaceholder">د ښوونځي رسمي شمېره او برېښنالیک دلته ورزیات کړئ.</p></div></div></div></section>
+</main>
+<footer><div class="container"><p><strong data-i18n="school">دریر خصوصي عالي لېسه</strong></p><p data-i18n="footer">پکتیا ولایت، سیدکرم ولسوالۍ • ټول حقونه خوندي دي</p><p class="ltr">Dareer Private High School</p></div></footer>
+</main>
+<script>
+const translations={
+ps:{location:"پکتیا ولایت، سیدکرم ولسوالۍ",grades:"له لومړي تر دولسم ټولګي",school:"دریر خصوصي عالي لېسه",home:"کورپاڼه",about:"زموږ په اړه",announcements:"خبرتیاوې",admission:"نوم‌لیکنه",results:"پایلې",gallery:"ګالري",contact:"اړیکه",welcome:"زموږ ښوونځي ته ښه راغلاست",headline:"پوهه، اخلاق او روښانه راتلونکی",intro:"دریر خصوصي عالي لېسه؛ د پکتیا ولایت د سیدکرم ولسوالۍ د زده‌کوونکو لپاره د زده‌کړې او پرمختګ کور.",apply:"د نوم‌لیکنې معلومات",contactUs:"له موږ سره اړیکه",gradeRange:"۱ ـ ۱۲ ټولګي",gradeLabel:"د زده‌کړې پړاوونه",threeLang:"۳ ژبې",langLabel:"پښتو، دري او انګلیسي",learning:"زده‌کړه او روزنه",future:"د روښانه راتلونکي لپاره",aboutTitle:"زموږ په اړه",aboutSub:"د ښوونځي پېژندنه او تعلیمي موخه",whoTitle:"دریر خصوصي عالي لېسه",whoText:"زموږ موخه د زده‌کوونکو د علمي وړتیاوو، ښو اخلاقو او مهارتونو پیاوړتیا ده. ښوونځی له لومړي تر دولسم ټولګي پورې د زده‌کړې لپاره پېژندل شوی.",whereTitle:"زموږ موقعیت",whereText:"پکتیا ولایت، سیدکرم ولسوالۍ، افغانستان.",updateNote:"د کره پتې او ټیلیفون شمېره وروسته ورزیات کړئ.",announcementTitle:"خبرتیاوې او اعلانونه",announcementSub:"د ښوونځي مهم خبرونه دلته خپرېږي",noAnnouncements:"اوس مهال نوې خبرتیا نه ده خپره شوې. د ښوونځي اداره کولای شي دا برخه د نویو اعلانونو په خپرولو تازه کړي.",admissionTitle:"د زده‌کوونکو نوم‌لیکنه",admissionSub:"د نوم‌لیکنې د علاقې فورمه",studentName:"د زده‌کوونکي نوم",guardian:"د پلار/سرپرست نوم",chooseGrade:"غوښتل شوی ټولګی",phone:"د اړیکې شمېره",extra:"نور معلومات (اختیاري)",sendForm:"د فورمې معلومات چمتو کړه",formWarning:"یادونه: دا نمونه فورمه ده؛ معلومات سرور ته نه لېږي. د حقیقي آنلاین نوم‌لیکنې لپاره به جلا خوندي سیستم ته اړتیا وي.",resultsTitle:"د ازموینو پایلې",resultsSub:"د زده‌کوونکو د پایلو برخه",noResults:"پایلې لا نه دي خپرې شوې. د زده‌کوونکو شخصي پایلې باید یوازې د ښوونځي د ادارې له خوا په خوندي ډول شریکې شي.",galleryTitle:"د ښوونځي ګالري",gallerySub:"د ښوونځي د فعالیتونو انځورونه",gallery1:"🏫 د ښوونځي ودانۍ",gallery2:"📚 درسي فعالیتونه",gallery3:"🏅 علمي او فرهنګي پروګرامونه",galleryNote:"دا د ګالري نمونې دي؛ د ښوونځي اصلي عکسونه وروسته ورزیات کړئ.",contactTitle:"له موږ سره اړیکه",contactSub:"د ښوونځي له ادارې سره د اړیکې معلومات",address:"پته",phoneEmail:"ټیلیفون او برېښنالیک",contactPlaceholder:"د ښوونځي رسمي شمېره او برېښنالیک دلته ورزیات کړئ.",footer:"پکتیا ولایت، سیدکرم ولسوالۍ • ټول حقونه خوندي دي",submitted:"د فورمې لنډیز چمتو شو. دا معلومات په دې ویب‌پاڼه کې نه خوندي کېږي او ښوونځي ته نه لېږل کېږي."},
+fa:{location:"ولایت پکتیا، ولسوالی سیدکرم",grades:"از صنف اول تا دوازدهم",school:"لیسه عالی خصوصی دریر",home:"صفحه اصلی",about:"درباره ما",announcements:"اطلاعیه‌ها",admission:"ثبت‌نام",results:"نتایج",gallery:"گالری",contact:"تماس",welcome:"به مکتب ما خوش آمدید",headline:"دانش، اخلاق و آینده روشن",intro:"لیسه عالی خصوصی دریر؛ خانه آموزش و پیشرفت برای شاگردان ولسوالی سیدکرم ولایت پکتیا.",apply:"معلومات ثبت‌نام",contactUs:"با ما تماس بگیرید",gradeRange:"صنف‌های ۱ تا ۱۲",gradeLabel:"مراحل آموزش",threeLang:"۳ زبان",langLabel:"پشتو، دری و انگلیسی",learning:"آموزش و پرورش",future:"برای آینده روشن",aboutTitle:"درباره ما",aboutSub:"معرفی مکتب و هدف آموزشی",whoTitle:"لیسه عالی خصوصی دریر",whoText:"هدف ما تقویت توانایی‌های علمی، اخلاق نیک و مهارت‌های شاگردان است. مکتب برای آموزش از صنف اول تا دوازدهم در نظر گرفته شده است.",whereTitle:"موقعیت ما",whereText:"ولایت پکتیا، ولسوالی سیدکرم، افغانستان.",updateNote:"آدرس دقیق و شماره تماس را بعداً اضافه کنید.",announcementTitle:"اطلاعیه‌ها و اعلان‌ها",announcementSub:"خبرهای مهم مکتب در اینجا نشر می‌شود",noAnnouncements:"در حال حاضر اطلاعیه تازه‌ای نشر نشده است. اداره مکتب می‌تواند این بخش را به‌روزرسانی کند.",admissionTitle:"ثبت‌نام شاگردان",admissionSub:"فورم علاقه‌مندی به ثبت‌نام",studentName:"نام شاگرد",guardian:"نام پدر/سرپرست",chooseGrade:"صنف مورد نظر",phone:"شماره تماس",extra:"معلومات دیگر (اختیاری)",sendForm:"آماده‌سازی معلومات فورم",formWarning:"یادداشت: این فورم نمونه است؛ معلومات به سرور فرستاده نمی‌شود. ثبت‌نام واقعی آنلاین به سیستم امن جداگانه نیاز دارد.",resultsTitle:"نتایج امتحانات",resultsSub:"بخش نتایج شاگردان",noResults:"نتایج هنوز نشر نشده است. نتایج شخصی شاگردان باید به‌صورت امن از سوی اداره مکتب شریک شود.",galleryTitle:"گالری مکتب",gallerySub:"تصاویر فعالیت‌های مکتب",gallery1:"🏫 تعمیر مکتب",gallery2:"📚 فعالیت‌های درسی",gallery3:"🏅 برنامه‌های علمی و فرهنگی",galleryNote:"این‌ها نمونه‌های گالری است؛ تصاویر اصلی مکتب را بعداً اضافه کنید.",contactTitle:"با ما تماس بگیرید",contactSub:"معلومات تماس با اداره مکتب",address:"آدرس",phoneEmail:"تلفون و ایمیل",contactPlaceholder:"شماره رسمی و ایمیل مکتب را اینجا اضافه کنید.",footer:"ولایت پکتیا، ولسوالی سیدکرم • تمام حقوق محفوظ است",submitted:"خلاصه فورم آماده شد. این معلومات در این صفحه ذخیره نمی‌شود و به مکتب فرستاده نمی‌شود."},
+en:{location:"Sayed Karam District, Paktia Province",grades:"Grades 1–12",school:"Dareer Private High School",home:"Home",about:"About",announcements:"Announcements",admission:"Admission",results:"Results",gallery:"Gallery",contact:"Contact",welcome:"Welcome to our school",headline:"Knowledge, character, and a brighter future",intro:"Dareer Private High School is a place for learning and growth for students in Sayed Karam District, Paktia Province.",apply:"Admission information",contactUs:"Contact us",gradeRange:"Grades 1–12",gradeLabel:"Learning levels",threeLang:"3 languages",langLabel:"Pashto, Dari, and English",learning:"Learning and growth",future:"For a brighter future",aboutTitle:"About our school",aboutSub:"School introduction and educational purpose",whoTitle:"Dareer Private High School",whoText:"Our aim is to strengthen students’ academic abilities, good character, and skills. The school serves grades 1 through 12.",whereTitle:"Our location",whereText:"Sayed Karam District, Paktia Province, Afghanistan.",updateNote:"Add the exact address and phone number later.",announcementTitle:"News and announcements",announcementSub:"Important school updates will appear here",noAnnouncements:"No new announcements have been published yet. The school administration can update this section.",admissionTitle:"Student admission",admissionSub:"Admission interest form",studentName:"Student name",guardian:"Parent/guardian name",chooseGrade:"Requested grade",phone:"Contact number",extra:"Additional information (optional)",sendForm:"Prepare form summary",formWarning:"Note: This is a demo form; it does not send data to a server. A separate secure system is needed for real online admissions.",resultsTitle:"Exam results",resultsSub:"Student results section",noResults:"Results have not been published yet. Individual student results should only be shared securely by the school administration.",galleryTitle:"School gallery",gallerySub:"Photos of school activities",gallery1:"🏫 School building",gallery2:"📚 Classroom activities",gallery3:"🏅 Academic and cultural events",galleryNote:"These are gallery placeholders; add real school photos later.",contactTitle:"Contact us",contactSub:"How to reach the school administration",address:"Address",phoneEmail:"Phone and email",contactPlaceholder:"Add the school's official phone number and email here.",footer:"Sayed Karam District, Paktia Province • All rights reserved",submitted:"A form summary is ready. This page does not save or send this information."}
+};
+function setLanguage(lang){const t=translations[lang]||translations.ps;document.documentElement.lang=lang;document.documentElement.dir=lang==="en"?"ltr":"rtl";document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(t[k])el.textContent=t[k]});document.getElementById("formOutput").classList.add("hidden");}
+document.getElementById("language").addEventListener("change",e=>setLanguage(e.target.value));
+document.getElementById("admissionForm").addEventListener("submit",e=>{e.preventDefault();const lang=document.getElementById("language").value;const t=translations[lang]||translations.ps;const out=document.getElementById("formOutput");out.textContent=t.submitted+"\n\n"+document.getElementById("student").value+" — "+document.getElementById("guardian").value+" — صنف: "+document.getElementById("grade").value+" — "+document.getElementById("phone").value;out.classList.remove("hidden");});
+</script>
+</body></html>
